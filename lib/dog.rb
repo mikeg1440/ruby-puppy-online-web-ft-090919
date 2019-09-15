@@ -6,7 +6,7 @@ class Dog
 
   def initialize(name)
     @name = name
-    @@all << self
+    # @@all << self
   end
 
   def self.all
@@ -23,6 +23,12 @@ class Dog
     end
 
   end
+
+  def save
+    @@all << self
+  end
+
+
 
 
 end
